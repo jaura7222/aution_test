@@ -7,21 +7,22 @@ import ApplicationComponent from './components/application/application.component
 import NaviComponent from './components/navi/navi.component';
 import NavibarComponent from './components/navi/navibar.component';
 import FooterComponent from './components/footer/footer.component';
-import DashboardContent from './content/dashboard/dashboard.content';
-import ChartContent from './content/chart/chart.content';
+import DashboardComponent from './components/dashboard/dashboard.component';
+
+import { ChartModule } from './components/chart/chart.module';
+
 
 @NgModule({
-    imports : [BrowserModule, RouterModule.forRoot([
-      {path:'', component:DashboardContent },
-      {path:'chart', component:ChartContent }
+    imports : [BrowserModule, ChartModule, RouterModule.forRoot([
+      {path:'', component:DashboardComponent }
     ])],
     declarations : [
         ApplicationComponent
         ,NaviComponent
         ,NavibarComponent
         ,FooterComponent
-        ,DashboardContent
-        ,ChartContent
+        ,DashboardComponent
+
     ],
     providers : [{provide:LocationStrategy, useClass:HashLocationStrategy}],
     bootstrap:[ApplicationComponent]

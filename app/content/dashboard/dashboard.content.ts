@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
-	selector : 'application-app',
-	templateUrl : 'app/components/application/application.component.html'
+	selector : 'dashboard-page',
+	templateUrl : 'app/content/dashboard/dashboard.content.html'
 })
-export default class ApplicationComponent {
-
-}
+export default class DashboardContent {}

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import ChartComponent  from './chart.component';
 
+
+
 @NgModule({
   imports: [CommonModule, RouterModule.forChild([
     {path : 'chart', component : ChartComponent}

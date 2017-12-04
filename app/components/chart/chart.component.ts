@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ProductService} from './services/product.service';
+import { Component, ViewEncapsulation } from '@angular/core';
+
 
 @Component({
 	selector : 'chart-page',
-	templateUrl : 'app/components/chart/chart.component.html'
+    templateUrl : 'app/components/chart/chart.component.html',
+    encapsulation : ViewEncapsulation.None
 })
 export default class ChartComponent {
-
-	product : Product;
 
 
 }
